@@ -448,7 +448,7 @@
     }
 
     function test($i, o) {
-        return ($i.innerHeight() > o.maxHeight || (o.maxLength && $i.text().length > o.maxLength));
+        return ($i.innerHeight() > o.maxHeight || (o.maxLength && $i.text().trim().length > o.maxLength));
     }
 
     function addEllipsis(txt, o) {
